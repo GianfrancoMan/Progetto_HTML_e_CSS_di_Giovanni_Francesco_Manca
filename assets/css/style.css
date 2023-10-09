@@ -1,0 +1,259 @@
+@font-face {
+  font-family: "Roboto";
+  src: url("./../fonts/Roboto-Light-webfont.woff") format("woff");
+  font-style: normal;
+  font-weight: 300;
+}
+@font-face {
+  font-family: "Roboto";
+  src: url("./../fonts/Roboto-LightItalic-webfont.woff") format("woff");
+  font-style: italic;
+  font-weight: 300;
+}
+@font-face {
+  font-family: "Roboto";
+  src: url("./../fonts/Roboto-Bold-webfont.woff") format("woff");
+  font-style: normal;
+  font-weight: 700;
+}
+@font-face {
+  font-family: "Action Man";
+  src: url("./../fonts/Action_Man-webfont.woff");
+  font-style: normal;
+  font-weight: 300;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto";
+  overflow: hidden;
+}
+
+body {
+  background-image: linear-gradient(rgb(180, 204, 195), 50%, rgb(248, 248, 248));
+}
+
+.page {
+  width: 80vw;
+  height: 100vh;
+  margin: auto;
+}
+
+h1, h2, h3 {
+  color: rgb(14, 153, 9);
+  font-weight: 100;
+  line-height: 1em;
+  margin: 10px 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.header {
+  width: 100%;
+  height: 60vh;
+  background-color: transparent;
+}
+.header-left, .header-right {
+  padding: 2em;
+  width: 50%;
+  height: 100%;
+  float: left;
+}
+.header-left .header-img, .header-right .header-img {
+  height: 267px;
+  width: 274px;
+  margin: auto;
+  border: rgb(14, 153, 9) 0.5px solid;
+  border-radius: 10px;
+  background-image: url("../../assets/images/metoo.png");
+}
+.header-left .header-img:hover, .header-right .header-img:hover {
+  animation: fadeIn 7s;
+  background-image: url("../../assets/images/me.png");
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.header-left p, .header-right p {
+  width: 80%;
+  margin: 20px auto;
+  font-style: italic;
+  font-size: 1.2em;
+  color: #0a6906;
+}
+.header h1 {
+  font-size: 4em;
+}
+.header h2 {
+  font-size: 3em;
+}
+.header h3 {
+  font-size: 2em;
+}
+
+.footer {
+  width: 100%;
+  height: 40vh;
+  background-color: transparent;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.footer-img {
+  width: 33.3%;
+  height: 100%;
+  text-align: center;
+}
+.footer-img img {
+  height: 95%;
+  text-align: center;
+}
+.footer-img img:hover {
+  height: 97%;
+  text-align: center;
+}
+
+/*-----------------------*/
+/* *** Media Queries *** */
+/*-----------------------*/
+@media only screen and (min-width: 701px) and (max-width: 1500px) {
+  .page {
+    width: 100vw;
+  }
+  .footer {
+    justify-content: center;
+  }
+  .footer-img {
+    height: 50%;
+  }
+}
+@media only screen and (max-width: 700px) {
+  .page {
+    width: 100vw;
+  }
+  .footer {
+    justify-content: center;
+  }
+  .footer-img {
+    height: 50%;
+  }
+  .header {
+    height: 30vh;
+  }
+  .header-left {
+    width: 100%;
+    text-align: center;
+  }
+  .header-right {
+    display: none;
+  }
+  .header h1 {
+    font-size: 2.3em;
+  }
+  .header h2 {
+    font-size: 1.8em;
+  }
+  .header h3 {
+    font-size: 1.3em;
+  }
+  .footer {
+    height: 70vh;
+    flex-direction: column;
+  }
+  .footer-img {
+    width: 100%;
+  }
+}
+#about {
+  display: flex;
+}
+#about .left {
+  width: 50%;
+  height: 100%;
+}
+#about .left .top-left {
+  width: 100%;
+  height: 20%;
+  background-color: transparent;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+#about .left .top-left-img {
+  width: 33, 3%;
+  height: 100%;
+}
+#about .left .top-left-img img {
+  margin: 20px 0;
+  height: 150px;
+}
+#about .left .top-left-img:hover {
+  margin: 20px 0;
+  height: 160px;
+}
+#about .left .main-left {
+  width: 100%;
+  height: 85%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+#about .left .main-left .wrap-img {
+  margin: auto;
+  width: 100%;
+  height: 75%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+#about .left .main-left .wrap-img img {
+  padding: 3px;
+  width: 35%;
+}
+#about .right {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#about .right-img {
+  width: 100%;
+  height: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+#about .right-img img {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+}
+#about .right-img .text-img {
+  position: absolute;
+  width: 65%;
+  left: 20%;
+  font-size: 1.2em;
+}
+#about .right-img .text-img p {
+  color: rgb(53, 53, 252);
+  font-family: "Action Man";
+  max-height: 200px;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+#about .right-img .text-img p::-webkit-scrollbar {
+  display: none;
+}
+
+/*# sourceMappingURL=style.css.map */
