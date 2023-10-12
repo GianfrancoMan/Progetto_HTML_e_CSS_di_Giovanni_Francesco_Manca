@@ -3,7 +3,6 @@
     margin: 0;
     padding: 0;
     font-family: $basic_font;
-    overflow: hidden;
 }
 
 body {
@@ -14,6 +13,7 @@ body {
     width: 80vw;
     height: 100vh;
     margin: auto;
+    overflow: hidden;
 }
 
 h1, h2, h3 {
