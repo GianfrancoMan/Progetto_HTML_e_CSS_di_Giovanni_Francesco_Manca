@@ -1,74 +1,75 @@
+#home {
+
+    .header {
+        width: 100%;
+        height: 60vh;
+        background-color: transparent;
+
+        &-left, &-right {
+            padding: 2em;
+            width: 50%;
+            height: 100%;
+            float: left;
+
+            .header-img {
+                height: 267px;
+                width: 274px;
+                margin: auto;
+                border: $secondary_color 0.5px solid;
+                border-radius: 10px;
+                background-image: url("../../assets/images/metoo.png");
 
 
-.header {
-    width: 100%;
-    height: 60vh;
-    background-color: transparent;
-
-    &-left, &-right {
-        padding: 2em;
-        width: 50%;
-        height: 100%;
-        float: left;
-        
-        .header-img {
-            height: 267px;
-            width: 274px;
-            margin: auto;
-            border: $secondary_color 0.5px solid;
-            border-radius: 10px;
-            background-image: url("../../assets/images/metoo.png");
-
-            
-            &:hover {
-                animation: fadeIn 7s;
-                background-image: url('../../assets/images/me.png');
+                &:hover {
+                    animation: fadeIn 7s;
+                    background-image: url('../../assets/images/me.png');
+                }
+                @keyframes fadeIn {
+                    0% { opacity: 0; }
+                    100% { opacity: 1; }
+                }
             }
-            @keyframes fadeIn {
-                0% { opacity: 0; }
-                100% { opacity: 1; }
+
+            p {
+                width: 80%;
+                margin: 20px auto;
+                font-style: italic;
+                font-size: 1.2em;
+                color:darken($color: $secondary_color, $amount: 10%);
             }
         }
 
-        p {
-            width: 80%;
-            margin: 20px auto;
-            font-style: italic;
-            font-size: 1.2em;
-            color:darken($color: $secondary_color, $amount: 10%);
-        }
+        @include set-heading(h1 h2 h3, 4em, 1) //sets h1, h2 and h3 headings
     }
 
-    @include set-heading(h1 h2 h3, 4em, 1) //sets h1, h2 and h3 headings
-}
+    .footer {
+        width: 100%;
+        height: 40vh;
+        background-color: transparent;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
 
-.footer {
-    width: 100%;
-    height: 40vh;
-    background-color: transparent;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-
-    &-img {
-        width: 33.3%;
-        height: 100%;
-        text-align: center;
-
-        & img {
-            height: 95%;
+        &-img {
+            width: 33.3%;
+            height: 100%;
             text-align: center;
-        }
 
-        & img:hover {
-            height: 97%;
-            text-align: center;
+            & img {
+                height: 95%;
+                text-align: center;
+            }
+
+            & img:hover {
+                height: 97%;
+                text-align: center;
+            }
         }
     }
 }
 
 
-/*-----------------------*/
-/* *** Media Queries *** */
-/*-----------------------*/
-@import "responsive-home";
+    /*-----------------------*/
+    /* *** Media Queries *** */
+    /*-----------------------*/
+    @import "responsive-home";
