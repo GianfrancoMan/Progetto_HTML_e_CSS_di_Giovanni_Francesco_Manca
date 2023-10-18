@@ -1,0 +1,94 @@
+#contacts {
+    .header {
+        width: 100%;
+        height: 20vh;
+        background-color: transparent;
+        &-left {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: flex-start;
+            padding: 0;
+            padding-left: 5px;
+            float: left;
+            width: 50%;
+            height: 100%;
+            h1, h2, h3 {
+                color: $text_red;
+            }
+            h3{
+                font-weight: bold;
+            }
+            @include set-heading(h1 h2 h3, 2em, 0.6) //sets h1, h2 and h3 headings
+        }
+        &-right {
+            float: left;
+            width: 50%;
+            height: 100%;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            visibility:hidden ;
+            a {
+                background-color: gray;
+                border-radius: 5px;
+                color: $text-yellow;
+                font-size: 0.8em;
+            }
+            a:hover {
+                color:lighten($text-yellow, 60%);
+            }
+        }
+    }
+
+    .main {
+        width: 100%;
+        height: 80vh;
+        &-left, &-right {
+            height: 100%;
+            float: left;
+        }
+        &-left {
+            width: 35%;
+            &-img {
+                height: 33.3%;
+                img {
+                    height: 270px;
+                }
+            }
+        }
+        &-right {
+            width: 65%;
+            border-radius: 10px;
+            .social{
+                h2 {
+                    font-family: $secondary_font;
+                    color:black;
+                }
+                & .social-img {
+                    height: 80%;
+                }
+                & .form {
+                    .wrap-form {
+                        background-color: lighten($text_red, 25);
+                        border-color: lighten($text_red, 25) !important;
+                    }
+                    label,
+                    input,
+                    button,
+                    textarea {
+                        font-family: $basic-font;
+                    }
+                    button {
+                        color: lighten($text_red, 25);
+                    }
+                }
+            }
+        }
+
+    }
+}
+/*-----------------------*/
+/* *** Media Queries *** */
+/*-----------------------*/
+@import "responsive-contacts";
