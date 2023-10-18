@@ -143,6 +143,10 @@
                         max-height: 200px;
                         overflow-x: hidden;
                         overflow-y: auto;
+                        a {
+                            color: $text_blue;
+                            font-family: $secondary_font;
+                        }
                     }
                     p::-webkit-scrollbar {
                         display: none;

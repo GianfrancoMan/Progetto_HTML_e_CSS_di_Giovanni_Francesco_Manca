@@ -37,7 +37,12 @@ body {
   width: 80vw;
   height: 100vh;
   margin: auto;
-  overflow: hidden;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.page::-webkit-scrollbar {
+  display: none;
 }
 
 h1, h2, h3 {
@@ -314,6 +319,10 @@ a {
   max-height: 200px;
   overflow-x: hidden;
   overflow-y: auto;
+}
+#about .main-right-img .text-img p a {
+  color: rgb(53, 53, 252);
+  font-family: "Action Man";
 }
 #about .main-right-img .text-img p::-webkit-scrollbar {
   display: none;
@@ -616,6 +625,143 @@ a {
   }
   #tech .footer {
     display: none;
+  }
+}
+
+#contacts .header {
+  width: 100%;
+  height: 20vh;
+  background-color: transparent;
+}
+#contacts .header-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 0;
+  padding-left: 5px;
+  float: left;
+  width: 50%;
+  height: 100%;
+}
+#contacts .header-left h1, #contacts .header-left h2, #contacts .header-left h3 {
+  color: rgb(253, 10, 10);
+}
+#contacts .header-left h3 {
+  font-weight: bold;
+}
+#contacts .header-left h1 {
+  font-size: 2em;
+}
+#contacts .header-left h2 {
+  font-size: 1.4em;
+}
+#contacts .header-left h3 {
+  font-size: 0.8em;
+}
+#contacts .header-right {
+  float: left;
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  visibility: hidden;
+}
+#contacts .header-right a {
+  background-color: gray;
+  border-radius: 5px;
+  color: rgb(149, 205, 37);
+  font-size: 0.8em;
+}
+#contacts .header-right a:hover {
+  color: white;
+}
+#contacts .main {
+  width: 100%;
+  height: 80vh;
+}
+#contacts .main-left, #contacts .main-right {
+  height: 100%;
+  float: left;
+}
+#contacts .main-left {
+  width: 35%;
+}
+#contacts .main-left-img {
+  height: 33.3%;
+}
+#contacts .main-left-img img {
+  height: 270px;
+}
+#contacts .main-right {
+  width: 65%;
+  border-radius: 10px;
+}
+#contacts .main-right .social h2 {
+  font-family: "Action Man";
+  color: black;
+}
+#contacts .main-right .social .social-img {
+  height: 80%;
+}
+#contacts .main-right .social .form .wrap-form {
+  background-color: #fe8888;
+  border-color: #fe8888 !important;
+}
+#contacts .main-right .social .form label,
+#contacts .main-right .social .form input,
+#contacts .main-right .social .form button,
+#contacts .main-right .social .form textarea {
+  font-family: "Roboto";
+}
+#contacts .main-right .social .form button {
+  color: #fe8888;
+}
+
+/*-----------------------*/
+/* *** Media Queries *** */
+/*-----------------------*/
+@media only screen and (max-width: 1600px) {
+  #contacts .form {
+    width: 75% !important;
+  }
+}
+@media only screen and (min-width: 1000px) and (max-width: 1599px) {
+  #contacts .main-left {
+    width: 30%;
+  }
+  #contacts .main-left-img img {
+    height: 208px;
+  }
+  #contacts .main-right {
+    width: 70%;
+  }
+}
+@media only screen and (max-width: 999px) {
+  #contacts .header {
+    height: 10vh;
+  }
+  #contacts .header-left {
+    width: 10%;
+    justify-content: flex-start;
+  }
+  #contacts .header-left h1, #contacts .header-left h2 {
+    display: none;
+  }
+  #contacts .header-right {
+    width: 90%;
+    visibility: visible;
+  }
+  #contacts .main-left {
+    display: none;
+  }
+  #contacts .main-right {
+    width: 100%;
+    visibility: visible;
+  }
+  #contacts .main-right .form {
+    width: 75% !important;
   }
 }
 
