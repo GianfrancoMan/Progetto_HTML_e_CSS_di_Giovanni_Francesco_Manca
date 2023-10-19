@@ -721,6 +721,9 @@ a {
 #contacts .main-right .social .form button {
   color: #fe8888;
 }
+#contacts .main-right .social .form img {
+  height: 20px;
+}
 
 /*-----------------------*/
 /* *** Media Queries *** */
