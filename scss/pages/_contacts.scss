@@ -54,6 +54,9 @@
                 height: 33.3%;
                 img {
                     height: 270px;
+                    &:hover {
+                        height: 250px;
+                    }
                 }
             }
         }

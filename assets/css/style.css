@@ -694,6 +694,9 @@ a {
 #contacts .main-left-img img {
   height: 270px;
 }
+#contacts .main-left-img img:hover {
+  height: 250px;
+}
 #contacts .main-right {
   width: 65%;
   border-radius: 10px;
@@ -763,6 +766,18 @@ a {
   #contacts .main-right .form {
     width: 75% !important;
   }
+}
+
+#cvdgt span {
+  margin-left: 30px;
+}
+#cvdgt span a {
+  text-decoration: none;
+  color: rgb(22, 119, 22);
+}
+#cvdgt span a:hover {
+  text-decoration: underline;
+  color: #1ea21e;
 }
 
 /*# sourceMappingURL=style.css.map */
