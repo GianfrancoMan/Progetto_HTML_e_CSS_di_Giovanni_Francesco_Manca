@@ -11,4 +11,6 @@
 <p>
   Per lo stile delle pagine ho preferito utilizzare Sass perchè grazie alla possibilità di usare variabili e funzioni sia embedded che custom, permette di eseguire programmaticamente parti ripetitive della stilizzazione.
 </p>
+<a href="./Presentazione.pdf" target="_blank" rel="noopener">Qui una breve presentazione</a>
+
 <a href="https://gianfrancoman.github.io/Progetto_HTML_e_CSS_di_Giovanni_Francesco_Manca/" target="_blank" rel="noopener">Qui puoi vedere il sito</a>
