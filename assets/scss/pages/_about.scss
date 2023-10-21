@@ -1,0 +1,185 @@
+#about {
+    display: block;
+
+    .header {
+        width: 100%;
+        height: 13.5vh;
+        background-color: transparent;
+        &-left {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: flex-start;
+            padding: 0;
+            padding-left: 5px;
+            float: left;
+            width: 50%;
+            height: 100%;
+            h1, h2, h3 {
+                color: $text_blue;
+            }
+            h3{
+                font-weight: bold;
+            }
+            @include set-heading(h1 h2 h3, 2em, 0.6) //sets h1, h2 and h3 headings
+        }
+        &-right {
+            float: left;
+            width: 50%;
+            height: 100%;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            visibility:hidden ;
+            a {
+                background-color: gray;
+                border-radius: 5px;
+                color: $text-yellow;
+                font-size: 0.8em;
+            }
+            a:hover {
+                color:lighten($text-yellow, 60%);
+            }
+        }
+
+    }
+
+    .main {
+        background-color: transparent;
+        width: 100%;
+        height: 55vh;
+        &-left {
+            background-color: transparent;
+            float: left;
+            width: 50%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items:center;
+            .wrap-img {
+                background-color: transparent;
+                margin: auto;
+                width: 100%;
+                height: 75%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-wrap: wrap;
+                img {
+                    width:270.5px; 
+                    height:257px;
+                }
+                .flip {
+                    background-color: transparent;
+                    width: 270.5px;
+                    height: 257px;
+                    perspective: 1000px;
+                  }
+
+                  .inner {
+                    position: relative;
+                    width: 100%;
+                    height: 100%;
+                    text-align: center;
+                    transition: transform 0.6s;
+                    transform-style: preserve-3d;
+                    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+                  }
+
+                  .flip:hover .inner {
+                    transform: rotateY(180deg);
+                  }
+
+                  .flip-front, .flip-back {
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                    -webkit-backface-visibility: hidden;
+                    backface-visibility: hidden;
+                  }
+
+                  .flip-front {
+                    background-color: $primary_color;
+                    h2 {
+                        line-height: 237px;
+                        color: $text_blue;
+                    }
+                  }
+
+                  .flip-back {
+                    background-color: transparent;
+                    transform: rotateY(180deg);
+                  }
+            }
+
+        }
+        &-right {
+            float: right;
+            width: 50%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            &-img {
+                width: 100%;
+                height: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                position: relative;
+                img {
+                    display: block;
+                    margin: 0 auto;
+                    max-width: 65%;
+                }
+                .text-img {
+                    position: absolute;
+                    width: 48%;
+                    left: 27%;
+                    font-size: 1.2em;
+                    p {
+                        color: $text_blue;
+                        font-family: $secondary_font;
+                        max-height: 200px;
+                        overflow-x: hidden;
+                        overflow-y: auto;
+                        a {
+                            color: $text_blue;
+                            font-family: $secondary_font;
+                        }
+                    }
+                    p::-webkit-scrollbar {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+
+    .footer {
+        width: 100%;
+        height: 31.5vh;
+        background-color: transparent;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        &-img {
+            float: left;
+            width: 33,3%;
+            height: 100%;
+            img {
+                height: 300px;
+            }
+            img:hover {
+                height: 320px;
+            }
+        }
+    }
+}
+
+
+/*-----------------------*/
+/* *** Media Queries *** */
+/*-----------------------*/
+@import "responsive-about";

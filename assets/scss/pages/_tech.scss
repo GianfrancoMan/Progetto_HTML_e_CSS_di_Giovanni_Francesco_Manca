@@ -1,0 +1,156 @@
+#tech {
+
+    display: block;
+    color: $text_green;
+
+    .header {
+        width: 100%;
+        height: 13.5vh;
+        background-color: transparent;
+        &-left {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: flex-start;
+            padding: 0;
+            padding-left: 5px;
+            float: left;
+            width: 50%;
+            height: 100%;
+            h1, h2, h3 {
+                color: $text_green;
+            }
+            h3{
+                font-weight: bold;
+            }
+            @include set-heading(h1 h2 h3, 2em, 0.6) //sets h1, h2 and h3 headings
+        }
+        &-right {
+            float: left;
+            width: 50%;
+            height: 100%;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            visibility:hidden ;
+            a {
+                color: $text-yellow;
+                border-radius: 5px;
+                font-size: 0.8em;
+                background-color: gray;
+            }
+            a:hover {
+                color: lighten($text-yellow, 60%);
+            }
+        }
+
+    }
+
+    .main {
+        width: 100%;
+        height: 55vh;
+        &-left, &-right {
+            width: 50%;
+            height: 100%;
+            float: left;
+        }
+        &-left {
+            &-top {
+                width: 90%;
+                height: 80%;
+                margin: auto;
+                background-color: rgba(black, 0.5);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-wrap: wrap;
+                border-radius: 10px;
+                .figure {
+                    margin-left: 10px;
+                    .caption {
+                        p {
+                            text-align: center;
+                            font-family: $secondary_font;
+                            background-color: black;
+                            border-radius: 5px;
+                        }
+                    }
+
+                    &:first-of-type{
+                        margin-left: 0;
+                    }
+                }
+            }
+            &-bot {
+                width: 90%;
+                height: 15%;
+                margin: auto;
+                h1{
+                    line-height: 50px;
+                }
+            }
+        }
+        &-right {
+            &-top {
+                width: 90%;
+                height: 15%;
+                margin: auto;
+                h1 {
+                    line-height: 50px;
+                    text-align: right;
+                }
+            }
+            &-bot {
+                width: 90%;
+                height: 80%;
+                margin: auto;
+                background-color: rgba(black, 0.5);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-wrap: wrap;
+                border-radius: 10px;
+                .figure {
+                    margin-left: 10px;
+                    .caption {
+                        p {
+                            text-align: center;
+                            font-family: $secondary_font;
+                            background-color: black;
+                            border-radius: 5px;
+                        }
+                    }
+                    &:first-of-type{
+                        margin-left: 0;
+                    }
+                }
+            }
+        }
+    }
+
+    .footer {
+        width: 100%;
+        height: 31.5vh;
+        background-color: transparent;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        &-img {
+            float: left;
+            width: 31,3%;
+            height: 100%;
+            img {
+                height: 300px;
+            }
+            img:hover {
+                height: 320px;
+            }
+        }
+    }
+}
+
+/*******************/
+/** Media Queries **/
+/*******************/
+@import "responsive-tech";
