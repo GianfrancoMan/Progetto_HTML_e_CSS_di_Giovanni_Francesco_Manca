@@ -28,17 +28,22 @@
             width: 50%;
             height: 100%;
             display: flex;
-            justify-content: space-around;
-            align-items: center;
+            justify-content: flex-end;
+            align-items:flex-start;
             visibility:hidden ;
-            a {
-                background-color: gray;
-                border-radius: 5px;
-                color: $text-yellow;
-                font-size: 0.8em;
-            }
-            a:hover {
-                color:lighten($text-yellow, 60%);
+            & .custom-bg {
+                background-color: transparent !important;
+                & .navbar-nav {
+                    background-color: lighten($text_blue, 10);
+                    border-radius: 10px;
+                    & .nav-link {
+                        padding-left: 7px;
+                        color: black;
+                    }
+                }
+                & .navbar-toggler {
+                    background-color: lighten($text_blue, 10);
+                }
             }
         }
 

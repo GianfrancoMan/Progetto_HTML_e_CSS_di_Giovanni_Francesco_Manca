@@ -30,17 +30,22 @@
             width: 50%;
             height: 100%;
             display: flex;
-            justify-content: space-around;
-            align-items: center;
+            justify-content: flex-end;
+            align-items:flex-start;
             visibility:hidden ;
-            a {
-                color: $text-yellow;
-                border-radius: 5px;
-                font-size: 0.8em;
-                background-color: gray;
-            }
-            a:hover {
-                color: lighten($text-yellow, 60%);
+            & .custom-bg {
+                background-color: transparent !important;
+                & .navbar-nav {
+                    background-color: $text_green;
+                    border-radius: 10px;
+                    & .nav-link {
+                        padding-left: 7px;
+                        color: black;
+                    }
+                }
+                & .navbar-toggler {
+                    background-color: $text_green;
+                }
             }
         }
 

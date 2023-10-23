@@ -1,6 +1,7 @@
 #about {
     @mixin  middle {
         .header {
+            height: auto;
             &-left {
                 width: 10%;
                 justify-content: flex-start;
