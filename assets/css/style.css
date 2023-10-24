@@ -804,4 +804,12 @@ a {
   color: #1ea21e;
 }
 
+#portfolio h3 a {
+  text-decoration: none;
+  color: rgb(14, 153, 9);
+}
+#portfolio h3 a:hover {
+  text-decoration: underline;
+}
+
 /*# sourceMappingURL=style.css.map */
