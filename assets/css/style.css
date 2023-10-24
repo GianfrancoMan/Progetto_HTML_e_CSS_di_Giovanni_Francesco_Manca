@@ -378,7 +378,6 @@ a {
   }
   #about .header-right {
     width: 90%;
-    visibility: visible;
   }
   #about .main {
     height: 86.5vh;
@@ -424,7 +423,6 @@ a {
   }
   #about .header-right {
     width: 90%;
-    visibility: visible;
   }
   #about .main {
     height: 86.5vh;
@@ -641,7 +639,6 @@ a {
   }
   #tech .header-right {
     width: 90%;
-    visibility: visible;
   }
   #tech .main {
     height: 90vh;
@@ -792,7 +789,6 @@ a {
   }
   #contacts .header-right {
     width: 90%;
-    visibility: visible;
   }
   #contacts .main-left {
     display: none;
