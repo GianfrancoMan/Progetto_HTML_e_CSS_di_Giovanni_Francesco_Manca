@@ -72,6 +72,9 @@ a {
   padding-left: 7px;
   color: rgb(22, 119, 22);
 }
+#home .header-top .custom-bg .navbar-nav .nav-link:hover {
+  color: white;
+}
 #home .header-top .custom-bg .navbar-toggler {
   background-color: #d2e1db;
 }
@@ -216,7 +219,6 @@ a {
   display: flex;
   justify-content: flex-end;
   align-items: flex-start;
-  visibility: hidden;
 }
 #about .header-right .custom-bg {
   background-color: transparent !important;
@@ -228,6 +230,9 @@ a {
 #about .header-right .custom-bg .navbar-nav .nav-link {
   padding-left: 7px;
   color: black;
+}
+#about .header-right .custom-bg .navbar-nav .nav-link:hover {
+  color: white;
 }
 #about .header-right .custom-bg .navbar-toggler {
   background-color: #6767fd;
@@ -502,21 +507,23 @@ a {
   display: flex;
   justify-content: flex-end;
   align-items: flex-start;
-  visibility: hidden;
 }
 #tech .header-right .custom-bg {
   background-color: transparent !important;
 }
 #tech .header-right .custom-bg .navbar-nav {
-  background-color: rgb(22, 119, 22);
+  background-color: #d2e1db;
   border-radius: 10px;
 }
 #tech .header-right .custom-bg .navbar-nav .nav-link {
   padding-left: 7px;
-  color: black;
+  color: rgb(22, 119, 22);
+}
+#tech .header-right .custom-bg .navbar-nav .nav-link:hover {
+  color: white;
 }
 #tech .header-right .custom-bg .navbar-toggler {
-  background-color: rgb(22, 119, 22);
+  background-color: #d2e1db;
 }
 #tech .main {
   width: 100%;
@@ -687,21 +694,23 @@ a {
   display: flex;
   justify-content: flex-end;
   align-items: flex-start;
-  visibility: hidden;
 }
 #contacts .header-right .custom-bg {
   background-color: transparent !important;
 }
 #contacts .header-right .custom-bg .navbar-nav {
-  background-color: #fe6f6f;
+  background-color: #fea2a2;
   border-radius: 10px;
 }
 #contacts .header-right .custom-bg .navbar-nav .nav-link {
   padding-left: 7px;
-  color: black;
+  color: rgb(82, 82, 82);
+}
+#contacts .header-right .custom-bg .navbar-nav .nav-link:hover {
+  color: white;
 }
 #contacts .header-right .custom-bg .navbar-toggler {
-  background-color: #fe6f6f;
+  background-color: #fea2a2;
 }
 #contacts .main {
   width: 100%;
@@ -797,15 +806,61 @@ a {
   }
 }
 
-#portfolio h3 a {
-  text-decoration: none;
-  color: rgb(14, 153, 9);
+#portfolio .header {
+  width: 100%;
+  height: 13.5vh;
+  background-color: transparent;
 }
-#portfolio h3 a:hover {
-  text-decoration: underline;
+#portfolio .header-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 0;
+  padding-left: 5px;
+  float: left;
+  width: 50%;
+  height: 100%;
 }
-#portfolio .nav {
-  margin-top: 50px;
+#portfolio .header-left h1, #portfolio .header-left h2, #portfolio .header-left h3 {
+  color: rgb(22, 119, 22);
+}
+#portfolio .header-left h3 {
+  font-weight: bold;
+}
+#portfolio .header-left h1 {
+  font-size: 2em;
+}
+#portfolio .header-left h2 {
+  font-size: 1.4em;
+}
+#portfolio .header-left h3 {
+  font-size: 0.8em;
+}
+#portfolio .header-right {
+  float: left;
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+}
+#portfolio .header-right .custom-bg {
+  background-color: transparent !important;
+}
+#portfolio .header-right .custom-bg .navbar-nav {
+  background-color: #d2e1db;
+  border-radius: 10px;
+}
+#portfolio .header-right .custom-bg .navbar-nav .nav-link {
+  padding-left: 7px;
+  color: rgb(22, 119, 22);
+}
+#portfolio .header-right .custom-bg .navbar-nav .nav-link:hover {
+  color: white;
+}
+#portfolio .header-right .custom-bg .navbar-toggler {
+  background-color: #d2e1db;
 }
 #portfolio .nav .custom-tab-btn {
   font-family: "Action Man";

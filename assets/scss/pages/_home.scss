@@ -14,6 +14,9 @@
                     & .nav-link {
                         padding-left: 7px;
                         color: $text_green;
+                        &:hover {
+                            color: white;
+                        }
                     }
                 }
                 & .navbar-toggler {

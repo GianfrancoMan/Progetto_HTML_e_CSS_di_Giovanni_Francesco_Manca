@@ -30,7 +30,6 @@
             display: flex;
             justify-content: flex-end;
             align-items:flex-start;
-            visibility:hidden ;
             & .custom-bg {
                 background-color: transparent !important;
                 & .navbar-nav {
@@ -39,6 +38,9 @@
                     & .nav-link {
                         padding-left: 7px;
                         color: black;
+                        &:hover {
+                            color: white;
+                        }
                     }
                 }
                 & .navbar-toggler {

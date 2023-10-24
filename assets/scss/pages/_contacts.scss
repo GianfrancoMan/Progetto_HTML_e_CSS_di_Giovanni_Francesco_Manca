@@ -28,19 +28,21 @@
             display: flex;
             justify-content: flex-end;
             align-items:flex-start;
-            visibility:hidden ;
             & .custom-bg {
                 background-color: transparent !important;
                 & .navbar-nav {
-                    background-color: lighten($text_red, 20);
+                    background-color: lighten($text_red, 30);
                     border-radius: 10px;
                     & .nav-link {
                         padding-left: 7px;
-                        color: black;
+                        color: rgb(82, 82, 82);
+                        &:hover {
+                            color: white;
+                        }
                     }
                 }
                 & .navbar-toggler {
-                    background-color: lighten($text_red, 20);
+                    background-color: lighten($text_red, 30);
                 }
             }
         }
