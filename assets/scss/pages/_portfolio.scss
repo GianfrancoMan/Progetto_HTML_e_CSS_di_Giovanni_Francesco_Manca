@@ -1,0 +1,9 @@
+#portfolio {
+    h3 a {
+        text-decoration: none;
+        color: $secondary_color;
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
