@@ -61,13 +61,27 @@ a {
   height: 60vh;
   background-color: transparent;
 }
+#home .header-top .custom-bg {
+  background-color: transparent !important;
+}
+#home .header-top .custom-bg .navbar-nav {
+  background-color: #d2e1db;
+  border-radius: 10px;
+}
+#home .header-top .custom-bg .navbar-nav .nav-link {
+  padding-left: 7px;
+  color: rgb(22, 119, 22);
+}
+#home .header-top .custom-bg .navbar-toggler {
+  background-color: #d2e1db;
+}
 #home .header-left, #home .header-right {
   padding: 2em;
   width: 50%;
   height: 100%;
   float: left;
 }
-#home .header-left .header-img, #home .header-right .header-img {
+#home .header-right .header-img {
   height: 267px;
   width: 274px;
   margin: auto;
@@ -75,7 +89,7 @@ a {
   border-radius: 10px;
   background-image: url("../../assets/images/metoo.png");
 }
-#home .header-left .header-img:hover, #home .header-right .header-img:hover {
+#home .header-right .header-img:hover {
   animation: fadeIn 7s;
   background-image: url("../../assets/images/me.png");
 }
@@ -87,7 +101,7 @@ a {
     opacity: 1;
   }
 }
-#home .header-left p, #home .header-right p {
+#home .header-right p {
   width: 80%;
   margin: 20px auto;
   font-style: italic;
@@ -128,12 +142,12 @@ a {
 /*-----------------------*/
 /* *** Media Queries *** */
 /*-----------------------*/
-@media only screen and (min-width: 701px) and (max-width: 1500px) {
+@media only screen and (min-width: 780px) and (max-width: 1500px) {
   #home .footer-img {
     height: 50%;
   }
 }
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 779px) {
   #home .header {
     height: 30vh;
   }
@@ -142,6 +156,9 @@ a {
     text-align: center;
   }
   #home .header-right {
+    width: 100%;
+  }
+  #home .header-right p {
     display: none;
   }
   #home .header h1 {
@@ -154,19 +171,7 @@ a {
     font-size: 1.3em;
   }
   #home .footer {
-    height: 70vh;
-    display: block;
-  }
-  #home .footer-img {
-    width: 100%;
-    height: 30%;
-  }
-  #home .footer-img img {
-    height: 30;
-    text-align: center;
-  }
-  #home .footer-img img:hover {
-    text-align: center;
+    display: none;
   }
 }
 
