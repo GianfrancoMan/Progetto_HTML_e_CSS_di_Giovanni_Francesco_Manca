@@ -811,5 +811,75 @@ a {
 #portfolio h3 a:hover {
   text-decoration: underline;
 }
+#portfolio .nav {
+  margin-top: 50px;
+}
+#portfolio .nav .custom-tab-btn {
+  font-family: "Action Man";
+  font-size: 1.5em;
+  color: rgb(22, 119, 22);
+  background-color: transparent;
+}
+#portfolio .nav .custom-tab-btn.active {
+  background-color: #aafaa7;
+  border-color: #aafaa7;
+}
+#portfolio #cvdgt {
+  text-align: center;
+}
+#portfolio #cvdgt p {
+  padding-top: 5px;
+  color: rgb(14, 153, 9);
+  font-family: "Action Man";
+}
+#portfolio #cvdgt object {
+  width: 100%;
+  height: 700px;
+}
+#portfolio .custom-tab {
+  width: 80%;
+  margin: auto;
+}
+#portfolio .custom-tab .project {
+  margin: auto;
+  width: 100%;
+  max-width: 800px;
+  padding-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#portfolio .custom-tab .project .description {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+}
+#portfolio .custom-tab .project .description p {
+  font-family: "Action Man";
+  color: rgb(22, 119, 22);
+  padding: 0 15px;
+}
+#portfolio .custom-tab .project .description p a {
+  font-family: "Action Man";
+  color: rgb(22, 119, 22);
+  text-decoration: none;
+}
+#portfolio .custom-tab .project .description p a:hover {
+  text-decoration: underline;
+  color: rgb(14, 153, 9);
+}
+#portfolio .custom-tab .project .image-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#portfolio .custom-tab .project .image-link img {
+  margin: auto;
+  max-height: 110px;
+}
+#portfolio .custom-tab hr {
+  border-color: rgb(248, 248, 248);
+}
 
 /*# sourceMappingURL=style.css.map */
