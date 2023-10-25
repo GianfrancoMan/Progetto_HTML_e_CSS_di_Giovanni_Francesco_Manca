@@ -1,52 +1,53 @@
-#portfolio {    .header {
-    width: 100%;
-    height: 13.5vh;
-    background-color: transparent;
-    &-left {
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        align-items: flex-start;
-        padding: 0;
-        padding-left: 5px;
-        float: left;
-        width: 50%;
-        height: 100%;
-        h1, h2, h3 {
-            color: $text_green;
+#portfolio {    
+    .header {
+        width: 100%;
+        height: 13.5vh;
+        background-color: transparent;
+        &-left {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: flex-start;
+            padding: 0;
+            padding-left: 5px;
+            float: left;
+            width: 50%;
+            height: 100%;
+            h1, h2, h3 {
+                color: $text_green;
+            }
+            h3{
+                font-weight: bold;
+            }
+            @include set-heading(h1 h2 h3, 2em, 0.6) //sets h1, h2 and h3 headings
         }
-        h3{
-            font-weight: bold;
-        }
-        @include set-heading(h1 h2 h3, 2em, 0.6) //sets h1, h2 and h3 headings
-    }
-    &-right {
-        float: left;
-        width: 50%;
-        height: 100%;
-        display: flex;
-        justify-content: flex-end;
-        align-items:flex-start;
-        & .custom-bg {
-            background-color: transparent !important;
-            & .navbar-nav {
-                background-color: lighten($primary_color, 10);
-                border-radius: 10px;
-                & .nav-link {
-                    padding-left: 7px;
-                    color: $text_green;
-                    &:hover {
-                        color: white;
+        &-right {
+            float: left;
+            width: 50%;
+            height: 100%;
+            display: flex;
+            justify-content: flex-end;
+            align-items:flex-start;
+            & .custom-bg {
+                background-color: transparent !important;
+                & .navbar-nav {
+                    background-color: lighten($primary_color, 10);
+                    border-radius: 10px;
+                    & .nav-link {
+                        padding-left: 7px;
+                        color: $text_green;
+                        &:hover {
+                            color: white;
+                        }
                     }
                 }
-            }
-            & .navbar-toggler {
-                background-color: lighten($primary_color, 10);
+                & .navbar-toggler {
+                    background-color: lighten($primary_color, 10);
+                }
             }
         }
-    }
 
-}
+    }
 
     .nav {
         .custom-tab-btn {
@@ -120,3 +121,9 @@
         }
     }
 }
+
+
+/*******************/
+/** Media Queries **/
+/*******************/
+@import "responsive-portfolio";
