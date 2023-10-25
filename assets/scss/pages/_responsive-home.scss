@@ -10,24 +10,25 @@
     }
 
     @media only screen and (max-width:779px) {
-        .header {
-            height: 30vh;
-            &-left {
-            width: 100%;
-            text-align: center;
-            }
-            &-right {
+            width: 100vw;
+            .header {
+                height: 30vh;
+                &-left {
                 width: 100%;
-                p {
-                    display: none
-                };
+                text-align: center;
+                }
+                &-right {
+                    width: 100%;
+                    p {
+                        display: none;
+                    }
+                }
+
+                @include set-heading((h1,h2,h3),2.3em,0.5);
             }
 
-            @include set-heading((h1,h2,h3),2.3em,0.5);
-        }
-
-        .footer {
-            display: none;
-        }
+            .footer {
+                display: none;
+            }
     }
 }

@@ -151,6 +151,9 @@ a {
   }
 }
 @media only screen and (max-width: 779px) {
+  #home {
+    width: 100vw;
+  }
   #home .header {
     height: 30vh;
   }
