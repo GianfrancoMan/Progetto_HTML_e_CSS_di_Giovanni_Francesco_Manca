@@ -648,6 +648,10 @@ a {
     width: 100%;
     height: 50%;
   }
+  #tech .main-left .main-left-top, #tech .main-left .main-right-bot, #tech .main-right .main-left-top, #tech .main-right .main-right-bot {
+    overflow-x: hidden;
+    overflow-y: auto;
+  }
   #tech .footer {
     display: none;
   }
