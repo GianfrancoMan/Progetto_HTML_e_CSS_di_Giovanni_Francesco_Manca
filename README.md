@@ -13,5 +13,5 @@
 </p>
 <hr>
 <a href="./Presentazione.pdf" target="_blank" rel="noopener">Qui una breve presentazione (in caso di aggiornamento del sito ulcune slide potrebbero differire dall'aspetto reale delle pagine web)</a>
-<br>
+<br><br>
 <a href="https://gianfrancoman.github.io/Progetto_HTML_e_CSS_di_Giovanni_Francesco_Manca/" target="_blank" rel="noopener">Vai al sito</a>

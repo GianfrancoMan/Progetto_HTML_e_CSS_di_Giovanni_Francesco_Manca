@@ -30,7 +30,9 @@
 }
 
 body {
-  background-image: linear-gradient(rgb(180, 204, 195), 50%, rgb(248, 248, 248));
+  background-image: url("../images/foglio.png");
+  background-repeat: round;
+  background-attachment: fixed;
 }
 
 .page {
@@ -865,15 +867,20 @@ a {
 #portfolio .header-right .custom-bg .navbar-toggler {
   background-color: #d2e1db;
 }
+#portfolio .nav {
+  border-color: rgb(53, 53, 252);
+}
 #portfolio .nav .custom-tab-btn {
   font-family: "Action Man";
   font-size: 1.5em;
   color: rgb(22, 119, 22);
-  background-color: transparent;
+  background-color: white;
+  border-color: rgb(53, 53, 252);
+  border-bottom: none;
 }
 #portfolio .nav .custom-tab-btn.active {
   background-color: #aafaa7;
-  border-color: #aafaa7;
+  border-color: rgb(53, 53, 252);
 }
 #portfolio #cvdgt {
   text-align: center;

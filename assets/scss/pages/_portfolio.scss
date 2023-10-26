@@ -50,15 +50,18 @@
     }
 
     .nav {
+        border-color: $text_blue;
         .custom-tab-btn {
             font-family: $secondary_font;
             font-size: 1.5em;
             color: $text_green;
-            background-color: transparent;
+            background-color: lighten($secondary_color, 80%);
+            border-color: $text_blue;
+            border-bottom: none;
         }
         .custom-tab-btn.active {
             background-color:  lighten($secondary_color, 50%) ;
-            border-color: lighten($secondary_color, 50%);
+            border-color: $text_blue;
         }
     }
 
