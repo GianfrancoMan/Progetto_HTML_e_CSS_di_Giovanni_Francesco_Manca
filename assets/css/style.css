@@ -807,7 +807,11 @@ a {
     visibility: visible;
   }
   #contacts .main-right .form {
-    width: 75% !important;
+    width: 100% !important;
+  }
+  #contacts .main-right .form .toast-container {
+    left: 10px;
+    top: 100px;
   }
 }
 

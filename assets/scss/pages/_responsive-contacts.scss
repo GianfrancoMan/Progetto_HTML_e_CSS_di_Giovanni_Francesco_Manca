@@ -43,7 +43,12 @@
             width: 100%;
             visibility: visible;
             .form {
-                width: 75% !important;
+                width: 100% !important;
+                
+                .toast-container {
+                    left:10px;
+                    top: 100px;
+                }
             }
         }
     }
