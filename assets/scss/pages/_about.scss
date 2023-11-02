@@ -75,6 +75,7 @@
                 img {
                     width:270.5px; 
                     height:257px;
+                    border-radius: 10px;
                 }
                 .flip {
                     background-color: transparent;
@@ -91,6 +92,7 @@
                     transition: transform 0.6s;
                     transform-style: preserve-3d;
                     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+                    border-radius: 10px;
                   }
 
                   .flip:hover .inner {
@@ -106,7 +108,8 @@
                   }
 
                   .flip-front {
-                    background-color: $primary_color;
+                    border-radius: 10px;
+                    background-color: transparent;
                     h2 {
                         line-height: 237px;
                         color: $text_blue;
